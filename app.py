@@ -25,7 +25,7 @@ except Exception as e:
 # Guard against partial deployments where app.py is newer than core/yt_downloader.py
 try:
     import inspect
-    from yt_downloader import YouTubeDownloader
+    from core.yt_downloader import YouTubeDownloader
     sig = inspect.signature(YouTubeDownloader.download_audio)
     if 'fallback_query' not in sig.parameters:
         print("[COMPAT] WARNING: core/yt_downloader.py is outdated (missing fallback_query).", flush=True)
