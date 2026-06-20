@@ -1,0 +1,21 @@
+# Telegram Bot runner requirements
+# Open-source libraries only
+
+# HTTP client
+requests>=2.31.0
+
+# Audio downloader
+yt-dlp>=2026.06.09
+
+# Spotify parsing
+beautifulsoup4>=4.12.2
+
+# Audio metadata & ID3 tagging
+mutagen>=1.47.0
+
+# Note: FFmpeg is also required for audio conversion.
+# Install FFmpeg separately:
+# Windows: Download from https://ffmpeg.org/download.html
+# macOS: brew install ffmpeg
+# Linux: sudo apt-get install ffmpeg
+static-ffmpeg>=2.5
